@@ -1,0 +1,15 @@
+/*external css*/
+body {
+  background-color: rgb(255, 0, 0);
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.navlink {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 4px;
+  background-color: #191970;
+  color: #f5f5ff;
+}

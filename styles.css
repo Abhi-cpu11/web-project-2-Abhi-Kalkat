@@ -1,15 +1,48 @@
 /*external css*/
 body {
-  background-color: rgb(255, 0, 0);
+  background-color: tan;
+  font-family: fantasy;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   font-size: 40px;
   text-align: center;
 }
-.navlink {
-  border: 2px solid black;
-  padding: 5px;
-  margin: 4px;
-  background-color: #191970;
-  color: #f5f5ff;
+div {
+  background-color: lightgray;
+  height: 40px;
+  line-height: 40px;
+  width: 400px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  text-align: center;
+  background-color: aqua;
+  border-radius: 15px;
+}
+.navbar a {
+  color: rgb(254, 254, 254);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: lavender;
+}
+.navbar li {
+  float: none;
+}
+.navbar ul {
+  list-style-type: none;
+  background-color: black;
+  margin: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
 }

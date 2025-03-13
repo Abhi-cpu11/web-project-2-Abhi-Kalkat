@@ -20,7 +20,7 @@ div {
   margin-right: auto;
 }
 img {
-  text-align: center;
+  float: center;
   background-color: aqua;
   border-radius: 15px;
 }
@@ -45,4 +45,13 @@ img {
   display: flex;
   justify-content: center;
   padding: 0px;
+}
+span {
+  color: navy;
+  font-style: italic;
+}
+p {
+  font-size: 20px;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }

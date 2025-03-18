@@ -14,16 +14,17 @@ Date Last Modified: March. 18. 2025
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treaty-One</title>
+    <!--Connecting the styles.css with the index.html-->
     <link rel="stylesheet" href="styles.css" />
     <style>
       /* Put some internal such as a class and id */
       iframe {
+        margin: 20px auto;
         max-width: 600px;
         border-radius: 8px;
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         padding: 10px;
-        float: right;
       }
     </style>
   </head>
@@ -31,7 +32,7 @@ Date Last Modified: March. 18. 2025
     <header>
       <nav class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" tabindex="1">Home</a></li>
         </ul>
       </nav>
     </header>
@@ -39,58 +40,84 @@ Date Last Modified: March. 18. 2025
     <main>
       <section>
         <div>
-          <h1>Treaty One History</h1>
+          <h1 tabindex="2">Treaty One History</h1>
         </div>
       </section>
 
-      <section tabindex="1">
-        <h2>What is Treaty One?</h2>
-        <p>
-          Treaty No. 1, signed on August 3, 1871, at
-          <span> Lower Fort Garry </span> in Manitoba, was the first of the
-          Numbered Treaties between the Canadian government and Indigenous
-          peoples. This treaty involved the Anishinaabe and Swampy Cree nations
-          of southern Manitoba. The agreement outlined the cession of specific
-          lands to the Crown in exchange for various commitments, including the
-          distribution of reserve lands, payments, and other benefits to the
-          Indigenous parties.
+      <section tabindex="3">
+        <h2 tabindex="4">What is Treaty One?</h2>
+        <p tabindex="5">
+          Treaty No. 1 was signed on August 3, 1871, at
+          <span> Lower Fort Garry </span> in North Winnipeg, Manitoba. It was
+          the first of the Numbered Treaties between the Canadian government and
+          Indigenous peoples. This treaty involved the Anishinaabe and Swampy
+          Cree nations of southern Manitoba. The agreement stated that specific
+          lands to the Crown was in exchange for various commitments, including
+          the reserve lands, payments, and other benefits to the Indigenous
+          groups.
         </p>
         <a
           href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 "
+          tabindex="6"
           >The Canadian Encyclopedia</a
         >
       </section>
 
-      <section>
+      <section tabindex="7">
         <figure>
           <img
             src="Fort Garry.jpg"
-            alt="Image displaying where Treaty One was signed." />
-          <figcaption>
-            Treaty One Land area in Manitoba. (Source:
+            alt="Image displaying where Treaty One was signed."
+            tabindex="8" />
+          <!--Make image more focused-->
+          <figcaption tabindex="9">
+            <!--Make caption more noticed-->
+            Treaty One, The Holy Lower Fort Garry. (Source:
             <a
               href="https://www.travelmanitoba.com/directory/lower-fort-garry-national-historic-site-of-canada/"
+              tabindex="10"
               >Travel Manitoba</a
-            >)
+            >
           </figcaption>
         </figure>
       </section>
+      <!--Reason why my Iframe loook different from my picture is because I have my iframe in internal -->
+      <!--Makre ur iframe a dif code-->
+      <section tabindex="11">
+        <figure>
+          <iframe
+            tabindex="12"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ZY53Ijkrbxs?si=-F0UMb_7Batdb-7E"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+          <figcaption tabindex="13">
+            Watch this video on
+            <a href="https://www.youtube.com/watch?v=ZY53Ijkrbxs" tabindex="14"
+              >YouTube</a
+            >
+            for more information about Treaty 1 and the 150 Anniversary.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!--Want to know more, anfd then add in NAV bar-->
+      <section tabindex="15">
+        <a href="https://native-land.ca/" tabindex="14"
+          >Learn about Indigenous Territories</a
+        >
+      </section>
     </main>
 
-    <section>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/ZY53Ijkrbxs?si=-F0UMb_7Batdb-7E"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Treaty One Project - Designed by Abhi Kalkat</p>
+    <footer tabindex="16">
+      <p tabindex="17">
+        &copy; 2025 Treaty One Project - Designed by Abhi Kalkat
+      </p>
     </footer>
   </body>
 </html>

@@ -9,47 +9,79 @@ School: Pembina trails Collegiate
 Date Last Modified: March. 18. 2025 
 -->
 <!DOCTYPE html>
+<!--Selcting a Coding Language -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Treaty-One</title>
+    <title>Treaty-One by Abhi Kalkat</title>
     <!--Connecting the styles.css with the index.html-->
     <link rel="stylesheet" href="styles.css" />
-    <!--Put in style for internal-->
+    <!--Put in style for internal css -->
     <style>
-      /* Put some internal such as a class and id */
+    /* Styling for the #epic-header */
+    #epic-header {
+      /* A large font size */
+      font-size: 45px;
+      /* Center the text */
+      text-align: center;
+      /* A royal purple color */
+      color: #5D3FD3;
+      /* A serif font */
+      font-family: 'Georgia', serif;
+      /* Subtle shadow effect */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    }
+      /* Styling for the iframe, including margins, borders, padding, and shadow */
       iframe {
-        margin: 20px auto;
-        max-width: 600px;
-        border-radius: 8px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 10px;
-      }
+      /* Adds 20px of space on the top and bottom of the element, and centers it horizontally */
+      margin: 20px auto; 
+      /* Limits the maximum width of the element to 600px */
+      max-width: 600px;
+      /* Rounds the corners of the element with an 8px radius */
+      border-radius: 8px;
+      /* Sets the background color to white (RGB value for white) */
+      background-color: rgb(255, 255, 255);
+      /* Adds a soft shadow with a 4px vertical offset, 8px blur, and low opacity for depth */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      /* Adds 10px of space inside the element around its content */
+      padding: 10px;
+    }
+    /* Closing the style tag */
     </style>
   </head>
+  <!--Body of the page-->
   <body>
+    <!--Header with my NAV bar-->
     <header>
       <nav class="navbar">
         <ul>
           <!--Put in the nav bar-->
-          <!--Put in the tabindex for the accesiblity-->
+          <!--Put in the tabindex for the accessiblity-->
           <li><a href="index.html" tabindex="1">Home</a></li>
         </ul>
       </nav>
     </header>
 
+    <!--Main content of the page-->
     <main>
+      <!--Section to break off codes and make it easier to understand, this one is for my h1 header-->
       <section>
+        <!--Div to group the elements such as h1-->
         <div>
-          <h1 tabindex="2">Treaty One History</h1>
+          <!-- Navigation link to the home page with tabindex for accessibility -->
+          <!--H1 special ID Tag -->
+          <h1 id="epic-header" tabindex="2">Treaty One History</h1>
         </div>
       </section>
 
+      <!--Section for the text and information about Treaty One-->
       <section tabindex="3">
+        <!--h2 for my "title" of what I'm going to be Yapping about-->
         <h2 tabindex="4">What is Treaty One?</h2>
+        <!--Paragraph explaining what treaty one is-->
         <p tabindex="5">
+          <!--Span in this <p> text to style vital text -->
           Treaty No. 1 was signed on August 3, 1871, at
           <span> Lower Fort Garry </span> in North Winnipeg, Manitoba. It was
           the first of the Numbered Treaties between the Canadian government and
@@ -59,6 +91,7 @@ Date Last Modified: March. 18. 2025
           the reserve lands, payments, and other benefits to the Indigenous
           groups.
         </p>
+        <!--Link to the Canadian Encyclopedia for more information on Treaty 1 -->
         <a
           href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 "
           tabindex="6"
@@ -66,15 +99,17 @@ Date Last Modified: March. 18. 2025
         >
       </section>
 
+      <!-- Section for a picture of where treaty is signed-->
       <section tabindex="7">
+        <!--Figure is to group images, videos, or diagrams-->
         <figure>
+          <!--Putting image in the website and using ALT text for accessiblity-->
           <img
             src="Lower Fort Garry.jpg"
-            alt="Image displaying where Treaty One was signed."
+            alt="Historic Lower Fort Garry, the site where Treaty One was signed. It displays eye popping greeniery and many important buildings from a distance."
             tabindex="8" />
-          <!--Make image more focused-->
+          <!--Make image more focused for tabbing and figcaption also adds addtional info such as links -->
           <figcaption tabindex="9">
-            <!--Make caption more noticed-->
             Treaty One, The Holy Lower Fort Garry. (Source):
             <a
               href="https://www.travelmanitoba.com/directory/lower-fort-garry-national-historic-site-of-canada/"
@@ -84,8 +119,8 @@ Date Last Modified: March. 18. 2025
           </figcaption>
         </figure>
       </section>
-      <!--Reason why my Iframe loook different from my picture is because I have my iframe in internal -->
-      <!--Makre ur iframe a dif code-->
+      <!--Reason why my Iframe look different from my picture is because I have my iframe in internal -->
+      <!--Section for iframe video-->
       <section tabindex="11">
         <figure>
           <iframe
@@ -99,7 +134,7 @@ Date Last Modified: March. 18. 2025
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
           </iframe>
-
+          <!-- Video caption with a link to the video on YouTube -->
           <figcaption tabindex="13">
             Watch this video on
             <a href="https://www.youtube.com/watch?v=ZY53Ijkrbxs" tabindex="14"
@@ -110,52 +145,84 @@ Date Last Modified: March. 18. 2025
         </figure>
       </section>
 
-      <!--Want to know more, anfd then add in NAV bar-->
+      <!-- Section for a picture of the Treaty 1 map -->
       <section tabindex="15">
-        <a href="https://native-land.ca/" tabindex="14"
-          >Learn about Indigenous Territories</a
-        >
+        <!--DIV for my iframe adds visual depth-->
+        <div>
+          <figure>
+            <img
+              src="An Area Of Treaty 1.jpg"
+              alt="A detailed map highlighting the geographical boundaries of Treaty One and Two. Being already zoomed in, you can see the different areas of the treaty and the land that was given to the Crown."
+              tabindex="16" />
+            <figcaption tabindex="17">
+              A Map Of Treaty 1. Treaty 2 Being In The Same Year, And This Is
+              Why They're Together. (Source):
+              <a
+                href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/"
+                tabindex="18"
+                >canadiangeographic</a
+              >
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section tabindex="15">
-        <figure>
-          <img
-            src="An Area Of Treaty 1.jpg"
-            alt="A map of treaty 1 and 2 displayed. User needs to focus on treaty 1 "
-            tabindex="16" />
-          <figcaption tabindex="17">
-            A Map Of Treaty 1 (Source):
-            <a
-              href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/"
-              tabindex="18"
-              >canadiangeographic</a
-            >
-          </figcaption>
-        </figure>
-      </section>
-
+      <!--Section for Colored Treaties and It displaying Treaty one in violet-blue-->
       <section tabindex="19">
         <figure>
           <img
-            src="An Area Of Treaty 1.jpg"
-            alt="A map of treaty 1 and 2 displayed. User needs to focus on treaty 1 "
+            src="Treaty Map Colored.png"
+            alt="A map showing the boundaries of Treaty 1-11. They do this by using Canada and all the 11 treaties to create a colored coordinated map. Showing Treaty numbers as in 1-11 and their years they began. "
             tabindex="20" />
           <figcaption tabindex="21">
-            A Map Of Treaty 1 (Source):
+            A Colored Map Of Treaty 1-11 In Canada. Treaty One Being A
+            Violet-Blue. (Source):
             <a
-              href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/"
+              href="https://en.wikipedia.org/wiki/Numbered_Treaties"
               tabindex="22"
-              >canadiangeographic</a
+              >wikipedia</a
             >
           </figcaption>
         </figure>
       </section>
+
+      <!--Section for treaty communities and who was incoorparated in treaty one-->
+      <section tabindex="23">
+        <h2 tabindex="24">Treaty One Communities</h2>
+        <p tabindex="25">
+          Treaty One is made up of many Indigenous communities in southern
+          Manitoba. These communities represent the
+          <span> Anishinaabe and Swampy Cree </span>
+          Nations. In particular, the Saulteaux (a division of the Anishinaabe),
+          Swampy Cree, and Ojibwe peoples signed the treaty. The historic
+          actions Indigenous communities took then affect the land we're living
+          on today. Many of us fail to realize/ take for granted the land we
+          live on.
+        </p>
+        <a
+          href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 "
+          tabindex="26"
+          >Canadian Encyclopedia</a
+        >
+      </section>
+      </br>
+      </br>
+      </br>
+      <!--Section for the Indigenous Territories and a addtional webpage-->
+      <section tabindex="">
+        <a href="https://native-land.ca/" tabindex=""
+          >Learn more about Indigenous Territories By clicking on this text</a
+        >
+      </section>
     </main>
 
+    <!--For the bottom of my page and will become more advanced in next webpage-->
     <footer tabindex="">
+      <!--Copywrited Just incase Charran wanted to copy-->
       <p tabindex="">
         &copy; 2025 Treaty One Project - Designed by Abhi Kalkat
       </p>
     </footer>
   </body>
+  <!--To complete and finalize the webpage -->
 </html>

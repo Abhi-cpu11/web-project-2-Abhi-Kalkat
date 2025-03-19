@@ -1,110 +1,165 @@
-/*external css*/
 body {
+  /* Set background color to tan */
   background-color: tan;
+  /* Use a fantasy font family */
   font-family: fantasy;
+  /* Set text color to dark grey */
   color: #333;
+  /* Remove default margin */
   margin: 0;
+  /* Remove default padding */
   padding: 0;
 }
 
 h1 {
+  /* Set font size to 40px */
   font-size: 40px;
+  /* Center align the text */
   text-align: center;
 }
 
+h2 {
+  /* Set font size to 30px */
+  font-size: 30px;
+  /* Align text to the left */
+  text-align: left;
+}
+
 div {
+  /* Set background color to light gray */
   background-color: lightgray;
-  height: 40px;
-  width: 400px;
+  /* Allow the div to adjust its height based on content */
+  height: auto;
+  /* Allow the div to adjust its width based on content */
+  width: auto;
+  /* Round the corners */
   border-radius: 8px;
+  /* Center the div horizontally */
   margin-left: auto;
+  /* Center the div horizontally */
   margin-right: auto;
 }
 
-/* Nav bar styling */
 .navbar a {
+  /* Set link color to white */
   color: rgb(254, 254, 254);
+  /* Remove underline from links */
   text-decoration: none;
+  /* Add padding around the link */
   padding: 15px;
+  /* Make links block elements for full-width clickable areas */
   display: block;
+  /* Center align the text inside the link */
   text-align: center;
 }
 
 .navbar a:hover {
+  /* Set background color to lavender when hovered */
   background-color: lavender;
+  /* Round the corners of the link on hover */
   border-radius: 5px;
 }
 
 .navbar li {
+  /* Remove any float (for use with flexbox) */
   float: none;
 }
 
 .navbar ul {
+  /* Remove bullet points from the list */
   list-style-type: none;
+  /* Set background color of the navbar to black */
   background-color: black;
+  /* Remove default margin */
   margin: 0px;
+  /* Clear floats (for use with flexbox) */
   overflow: hidden;
+  /* Use flexbox layout for horizontal items */
   display: flex;
+  /* Center-align navbar items */
   justify-content: center;
+  /* Remove padding */
   padding: 0px;
 }
 
-/*text styling*/
 span {
+  /* Set text color to navy */
   color: navy;
+  /* Set text style to italic */
   font-style: italic;
 }
 
 p {
+  /* Set font size to 20px */
   font-size: 20px;
+  /* Align text to the left */
   text-align: left;
+  /* Set a serif font for paragraphs */
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/*footer styling*/
 footer {
+  /* Set footer background color to black */
   background-color: black;
+  /* Set footer text color to white */
   color: rgb(255, 255, 255);
+  /* Add padding inside the footer */
   padding: 10px;
+  /* Set width to 100% of the screen */
   width: 100%;
+  /* Stick footer to the bottom of the page */
   bottom: 0;
 }
 
 img {
+  /* Make sure images don't exceed their container's width */
   max-width: 100%;
+  /* Round the corners of images */
   border-radius: 8px;
+  /* Ensure the image's aspect ratio is maintained */
   height: auto;
 }
 
 figure {
+  /* Use flexbox layout */
   display: flex;
+  /* Stack content vertically within the figure */
   flex-direction: column;
+  /* Add space above and below the figure */
   margin-top: 20px 0;
+  /* Set a maximum width for the figure */
   max-width: 600px;
+  /* Round the corners of the figure */
   border-radius: 8px;
+  /* Set background color to white */
   background-color: rgb(255, 255, 255);
+  /* Add a soft shadow around the figure */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add padding inside the figure */
   padding: 10px;
 }
 
 figcaption {
+  /* Set the font style to italic */
   font-style: italic;
+  /* Center-align the text in the caption */
   text-align: center;
+  /* Add space above the caption */
   margin-top: 8px;
+  /* Set font size to 14px */
   font-size: 14px;
+  /* Set caption text color to a dark grey */
   color: #555;
 }
 
 a {
+  /* Set link color to blue */
   color: #0066cc;
+  /* Remove underline from links */
   text-decoration: none;
 }
 
 a:hover {
+  /* Underline links when hovered */
   text-decoration: underline;
-}
-
-h3 {
-  text-align: center;
-  font-size: 20px;
 }

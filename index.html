@@ -20,33 +20,58 @@ Date Last Modified: March. 18. 2025
     <!--Put in style for internal css -->
     <style>
     /* Styling for the #epic-header */
-    #epic-header {
-      /* A large font size */
-      font-size: 45px;
-      /* Center the text */
-      text-align: center;
-      /* A royal purple color */
-      color: #5D3FD3;
-      /* A serif font */
-      font-family: 'Georgia', serif;
-      /* Subtle shadow effect */
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    }
-      /* Styling for the iframe, including margins, borders, padding, and shadow */
-      iframe {
-      /* Adds 20px of space on the top and bottom of the element, and centers it horizontally */
-      margin: 20px auto; 
-      /* Limits the maximum width of the element to 600px */
-      max-width: 600px;
-      /* Rounds the corners of the element with an 8px radius */
-      border-radius: 8px;
-      /* Sets the background color to white (RGB value for white) */
-      background-color: rgb(255, 255, 255);
-      /* Adds a soft shadow with a 4px vertical offset, 8px blur, and low opacity for depth */
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      /* Adds 10px of space inside the element around its content */
-      padding: 10px;
-    }
+
+#epic-header {
+  /* A large font size */
+  font-size: 45px;
+  /* Center the text */
+  text-align: center;
+  /* A royal purple color */
+  color: #5D3FD3;
+  /* A serif font */
+  font-family: 'Georgia', serif;
+  /* Subtle shadow effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+  /* Styling for the iframe aka vision frame for a ID effect */
+#vision-frame {
+  /* Adds 20px of space on the top and bottom of the element, and centers it horizontally */
+  margin: 20px auto; 
+  /* Limits the maximum width of the element to 600px */
+  max-width: 600px;
+  /* Rounds the corners of the element with an 8px radius */
+  border-radius: 8px;
+  /* Sets the background color to white (RGB value for white) */
+  background-color: grey;
+  /* Adds a soft shadow with a 4px vertical offset, 8px blur, and low opacity for depth */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adds 10px of space inside the element around its content */
+  padding: 10px;
+}
+
+  /* Styling for the 'Explore Indigenous Lands' link */
+#explore-link {
+  /* Makes the link behave like a button */
+  display: inline-block;
+  /* Creates a gradient background transitioning from purple to blue */
+  background: linear-gradient(45deg, #5D3FD3, #003cff);
+  /* Sets the text color to white for better contrast */
+  color: white;
+  /* Increases the font size for better readability */
+  font-size: 18px;
+  /* Makes the text bold for emphasis */
+  font-weight: bold;
+  /* Adds padding inside the button for a better appearance */
+  padding: 12px 20px;
+  /* Rounds the corners for a modern, softer look */
+  border-radius: 8px;
+  /* Removes the default underline on links */
+  text-decoration: none;
+  /* Adds a subtle shadow effect for depth */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
     /* Closing the style tag */
     </style>
   </head>
@@ -54,7 +79,7 @@ Date Last Modified: March. 18. 2025
   <body>
     <!--Header with my NAV bar-->
     <header>
-      <nav class="navbar">
+      <nav class="trailblazer-nav">
         <ul>
           <!--Put in the nav bar-->
           <!--Put in the tabindex for the accessiblity-->
@@ -77,7 +102,7 @@ Date Last Modified: March. 18. 2025
 
       <!--Section for the text and information about Treaty One-->
       <section tabindex="3">
-      <!-- Div 1: Groups the title and paragraph -->
+      <!-- Div Groups the title and paragraph -->
       <div>
         <!--h2 for my "title" of what I'm going to be Yapping about-->
         <h2 tabindex="4">What is Treaty One?</h2>
@@ -122,11 +147,12 @@ Date Last Modified: March. 18. 2025
           </figcaption>
         </figure>
       </section>
-      <!--Reason why my Iframe look different from my picture is because I have my iframe in internal -->
+
       <!--Section for iframe video-->
       <section tabindex="11">
         <figure>
-          <iframe
+          <!--Using the special ID vision-frame, the iframe is grey is show color contrast. I have realized when I have another Iframe it will look different, but this is because this iframe holds a signifcant more value. Also the height and width is more visable.-->
+          <iframe id="vision-frame"
             tabindex="12"
             width="560"
             height="315"
@@ -150,8 +176,8 @@ Date Last Modified: March. 18. 2025
 
       <!-- Section for a picture of the Treaty 1 map -->
       <section tabindex="15">
-        <!--DIV grouping my iframe and a href. It also adds visual depth-->
-        <div>
+        <!--DIV grouping my iframe and a href by using the class. It also adds visual depth. Before it used to expand to far out right, its way cleaner now.-->
+        <div class="image-container">
           <figure>
             <img
               src="An Area Of Treaty 1.jpg"
@@ -191,6 +217,8 @@ Date Last Modified: March. 18. 2025
 
       <!--Section for treaty communities and who was incoorparated in treaty one-->
       <section tabindex="23">
+        <!-- DIV Groups the title and paragraph -->
+        <div>
         <h2 tabindex="24">Treaty One Communities</h2>
         <p tabindex="25">
           Treaty One is made up of many Indigenous communities in southern
@@ -198,7 +226,7 @@ Date Last Modified: March. 18. 2025
           <span> Anishinaabe and Swampy Cree </span>
           Nations. In particular, the Saulteaux (a division of the Anishinaabe),
           Swampy Cree, and Ojibwe peoples signed the treaty. The historic
-          actions Indigenous communities took then affect the land we're living
+          actions Indigenous communities took then still affect the land we're living
           on today. Many of us fail to realize/ take for granted the land we
           live on.
         </p>
@@ -207,22 +235,23 @@ Date Last Modified: March. 18. 2025
           tabindex="26"
           >Canadian Encyclopedia</a
         >
+      </div>
       </section>
       </br>
       </br>
       </br>
       <!--Section for the Indigenous Territories and a addtional webpage-->
       <section tabindex="">
-        <a href="https://native-land.ca/" tabindex=""
+        <a href="https://native-land.ca/" id="explore-link" tabindex="27"
           >Learn more about Indigenous Territories By clicking on this text</a
         >
       </section>
     </main>
 
     <!--For the bottom of my page and will become more advanced in next webpage-->
-    <footer tabindex="">
+    <footer tabindex="28">
       <!--Copywrited Just incase Charran wanted to copy-->
-      <p tabindex="">
+      <p tabindex="29">
         &copy; 2025 Treaty One Project - Designed by Abhi Kalkat
       </p>
     </footer>

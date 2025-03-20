@@ -39,8 +39,25 @@ div {
   /* Center the div horizontally */
   margin-right: auto;
 }
+
+.image-container {
+  /* Set display to inline-block so the div only takes up the necessary width */
+  display: inline-block;
+  /* Optionally set a maximum width to prevent the div from expanding too much */
+  max-width: 100%;
+  /* Optional: Center the div if you'd like */
+  text-align: center;
+  /* Optional: Add some padding around the div */
+  padding: 10px;
+  /* Optional: Add a border to visually separate the container */
+  border: 1px solid lightgray;
+  /* Optional: Ensure it doesn't affect the image layout */
+  box-sizing: border-box;
+}
+
 /*Ishaan helped me with my NAV bar*/
-.navbar a {
+/*"Trailblazer" refers to someone who paves the way for others to follow. They are following my NAV page*/
+.trailblazer-nav a {
   /* Set link color to white */
   color: rgb(254, 254, 254);
   /* Remove underline from links */
@@ -53,19 +70,19 @@ div {
   text-align: center;
 }
 
-.navbar a:hover {
+.trailblazer-nav a:hover {
   /* Set background color to lavender when hovered */
   background-color: lavender;
   /* Round the corners of the link on hover */
   border-radius: 5px;
 }
 
-.navbar li {
+.trailblazer-nav li {
   /* Remove any float (for use with flexbox) */
   float: none;
 }
 
-.navbar ul {
+.trailblazer-nav ul {
   /* Remove bullet points from the list */
   list-style-type: none;
   /* Set background color of the navbar to black */

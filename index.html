@@ -20,10 +20,12 @@ Date Last Modified: March. 19. 2025
     <link rel="stylesheet" href="styles.css" />
     <!--Put in style for internal css -->
     <style>
-    /* Styling for the #epic-header */
+    /* Styling for html and the scroll behavior to be smooth */
+
 html{
   scroll-behavior: smooth;
 }
+/* Styling for the #epic-header */
 #epic-header {
   /* A large font size */
   font-size: 45px;
@@ -86,7 +88,8 @@ html{
         <ul>
           <!--Put in the nav bar-->
           <!--Put in the tabindex for the accessiblity-->
-          <li><a href="index.html" tabindex="1">Home</a></li>
+          <li><a href="index.html" tabindex="0">Home</a></li>
+          <li><a href="second-page.html" tabindex="1">Second Page</a></li>
         </ul>
       </nav>
     </header>
@@ -257,110 +260,82 @@ html{
         >
       </section>
 
-      <section tabindex="">
-<!-- Section for newsletter signup -->
-<section tabindex="28" aria-labelledby="newsletterHeading">
-  <!-- Main heading for this section -->
-  <h2 id="newsletterHeading">Stay Updated with Our Newsletter</h2>
-  <!-- Short description of what the form offers -->
-  <p>Subscribe to get the latest articles, updates, and exclusive content delivered straight to your inbox.</p>
-  <!-- Newsletter form with an accessible label -->
-  <form aria-label="Newsletter Subscription Form">
-    <!-- Grouping the form fields for accessibility -->
-    <fieldset>
-      <!-- Title for the group of form controls -->
-      <legend>Subscribe with your email address</legend>
-      <!-- Label connected to the email input -->
-      <label for="email">Email Address:</label><br>
-      <!-- Email input with help references -->
-      <input type="email" id="email" name="email" placeholder="e.g. yourname@example.com" aria-describedby="emailHelp emailFormat" required><br>
-      <!-- Help text about privacy -->
-      <small id="emailHelp">We value your privacy and will never share your email with anyone else.</small><br>
-      <!-- Format guidance for the email field -->
-      <small id="emailFormat">Please enter a valid email format (e.g. name@example.com).</small><br><br>
-      <!-- Submit button with an accessible description -->
-      <input type="submit" value="Subscribe Now" aria-label="Submit your email to subscribe">
-    </fieldset>
-  </form>
+      <section index="">
+    <!-- Main heading for this section -->
+    <h2 id="newsletterHeading">Stay Updated with Our Newsletter</h2>
+    <!-- Short description of what the form offers -->
+    <p>Subscribe to get the latest articles, updates, and exclusive content delivered straight to your inbox.</p>
+    <!-- Newsletter form -->
+    <form>
+      <!-- Grouping the form fields -->
+      <fieldset>
+        <!-- Title for the group of form controls -->
+        <legend>Subscribe with your email address</legend>
+        <!-- Label connected to the email input -->
+        <label for="email">Email Address:</label><br>
+        <!-- Email input -->
+        <input type="email" id="email" name="email" placeholder="e.g. yourname@example.com" required><br>
+        <!-- Help text shown visually only -->
+        <small>We value your privacy and will never share your email with anyone else.</small><br>
+        <small>Please enter a valid email format (e.g. name@example.com).</small><br><br>
+        <!-- Submit button -->
+        <input type="submit" value="Subscribe Now">
+      </fieldset>
+    </form>
+  </section>
 </section>
 
-      <!--Section for the text and information about Treaty One-->
-      <section tabindex="3">
+
+      <!--Section for the text and information about Treaty One and its historic term-->
+      <section tabindex="">
       <!-- Div Groups the title and paragraph -->
       <div>
-        <!--h2 for my "title" of what I'm going to be Yapping about-->
-        <h2 tabindex="4">What is Treaty One?</h2>
-        <!--Paragraph explaining what treaty one is-->
-        <p tabindex="5">
-          <!--Span in this <p> text to style vital text -->
-          Treaty No. 1 was signed on August 3, 1871, at
-          <span> Lower Fort Garry </span> in North Winnipeg, Manitoba. It was
-          the first of the Numbered Treaties between the Canadian government and
-          Indigenous peoples. This treaty involved the Anishinaabe and Swampy
-          Cree nations of southern Manitoba. The agreement stated that specific
-          lands to the Crown was in exchange for various commitments, including
-          the reserve lands, payments, and other benefits to the Indigenous
-          groups.
+        <!--h2 for my "title" of what I'm going to be yip yapping about-->
+        <h2 tabindex="">What are the historic terms of the Treaty 1?</h2>
+        <p tabindex="">
+          Treaty 1 was signed in 1871 between the Canadian government and seven First Nations groups. Some of the key terms in the Treaty included land, money, and other promises. Each Indigenous family of five was promised 160 acres of land, which breaks down to 32 acres per person. The government also promised to give them farming tools, animals, and money to help them move into farming. On top of that, there were “outside promises” not written in the original treaty document. These included clothing, ammunition, and a yearly payment of five dollars per person. In hindsight, $5 back then had a lot more value compared to what $5 is worth in today's economy.
         </p>
-        <!--Link to the Canadian Encyclopedia for more information on Treaty 1 -->
+        <!--Link to the information/source-->
         <a
-          href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 "
+          href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028660/1564413031536"
           tabindex="6"
-          >Read more about Treaties 1 and 2 on The Canadian Encyclopedia by clicking on this text</a
+          > Learn more about the land allocations, farming, and goverment promises outlined in Treaty 1 (1871) from the Government of Canada's official report, by clicking on this text</a
         >
         </div>
       </section>
 
-            <!--Section for the text and information about Treaty One-->
+            <!--Section for the text and information about Treaty One -->
       <section tabindex="3">
-      <!-- Div Groups the title and paragraph -->
       <div>
-        <!--h2 for my "title" of what I'm going to be Yapping about-->
-        <h2 tabindex="4">What is Treaty One?</h2>
-        <!--Paragraph explaining what treaty one is-->
+        <h2 tabindex="4">What makes Treaty 1 different from other Treaties in Canada?</h2>
+        <!--Paragraph explaining what makes it different from other treaties-->
         <p tabindex="5">
-          <!--Span in this <p> text to style vital text -->
-          Treaty No. 1 was signed on August 3, 1871, at
-          <span> Lower Fort Garry </span> in North Winnipeg, Manitoba. It was
-          the first of the Numbered Treaties between the Canadian government and
-          Indigenous peoples. This treaty involved the Anishinaabe and Swampy
-          Cree nations of southern Manitoba. The agreement stated that specific
-          lands to the Crown was in exchange for various commitments, including
-          the reserve lands, payments, and other benefits to the Indigenous
-          groups.
+          Treaty 1 is different from some other treaties because it was the first numbered treaty signed after Manitoba joined Canada. It also set the tone for future treaties. But many people from Treaty 1 say that they didn’t agree to give up their land forever. They believed they were sharing the land, not surrendering it. This misunderstanding led to a lot of problems later on. Furthermore, the Treaty was written in English, and many Indigenous leaders didn’t speak or read English. This made it hard for them to fully understand what they were signing.
         </p>
-        <!--Link to the Canadian Encyclopedia for more information on Treaty 1 -->
+        <!--Link to addtional information on Treaty 1 -->
         <a
-          href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 "
+          href="https://www.canadashistory.ca/explore/politics-law/interpreting-the-treaties"
           tabindex="6"
-          >Read more about Treaties 1 and 2 on The Canadian Encyclopedia by clicking on this text</a
+          > Learn more about how Treaty 1 was interpreted differently compared to other treaties, by clicking on this text.</a
         >
         </div>
       </section>
 
-            <!--Section for the text and information about Treaty One-->
+            <!--Section for the text and information about Treaty One and how its implemented today-->
       <section tabindex="3">
       <!-- Div Groups the title and paragraph -->
       <div>
         <!--h2 for my "title" of what I'm going to be Yapping about-->
-        <h2 tabindex="4">What is Treaty One?</h2>
+        <h2 tabindex="4">How is Treaty 1 implemented today?</h2>
         <!--Paragraph explaining what treaty one is-->
         <p tabindex="5">
-          <!--Span in this <p> text to style vital text -->
-          Treaty No. 1 was signed on August 3, 1871, at
-          <span> Lower Fort Garry </span> in North Winnipeg, Manitoba. It was
-          the first of the Numbered Treaties between the Canadian government and
-          Indigenous peoples. This treaty involved the Anishinaabe and Swampy
-          Cree nations of southern Manitoba. The agreement stated that specific
-          lands to the Crown was in exchange for various commitments, including
-          the reserve lands, payments, and other benefits to the Indigenous
-          groups.
+          Treaty 1 is still important today and is recognized by Canadian law under the Constitution Act, 1982. This means the government still has a legal duty to respect the promises made in the Treaty. One way Treaty 1 is being put into action is through urban reserves. These are pieces of land inside cities that are owned and run by First Nations. For example, the Treaty One Nation is developing the Kapyong Barracks site in Winnipeg into a huge urban reserve. It will include housing, businesses, and green space. This project gives First Nations more control over their land and helps their communities grow economically. Another way Treaty 1 is being implemented is through agreements that support Indigenous education, health care, and business opportunities. Some Treaty 1 First Nations are also using treaty rights to take part in decisions about land and resources.
         </p>
-        <!--Link to the Canadian Encyclopedia for more information on Treaty 1 -->
+        <!--For more information on Treaty 1 -->
         <a
-          href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 "
-          tabindex="6"
-          >Read more about Treaties 1 and 2 on The Canadian Encyclopedia by clicking on this text</a
+          href="https://treaty1.ca/naawi-oodena/"
+          tabindex=""
+          >Click here on this text to learn more about the Kapyong Barracks and how Treaty One is being implemented today on the official Treaty One website. </a
         >
         </div>
       </section>

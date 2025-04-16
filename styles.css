@@ -63,7 +63,7 @@ div {
 }
 
 /*Ishaan helped me with my NAV bar*/
-/*"Trailblazer" refers to someone who paves the way for others to follow. They are following my NAV page*/
+/*"Trailblazer" refers to someone who paves the way for others to follow. They are following my NAV bar*/
 .trailblazer-nav a {
   /* Set link color to white */
   color: rgb(254, 254, 254);
@@ -75,6 +75,8 @@ div {
   display: block;
   /* Center align the text inside the link */
   text-align: center;
+  /*Setting the background to brown?*/
+  background-color: #8b4513;
 }
 
 .trailblazer-nav a:hover {
@@ -124,7 +126,7 @@ p {
 
 footer {
   /* Set footer background color to black */
-  background-color: black;
+  background-color: #8b4513;
   /* Set footer text color to white */
   color: rgb(255, 255, 255);
   /* Add padding inside the footer */
@@ -186,4 +188,8 @@ a {
 a:hover {
   /* Underline links when hovered */
   text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
 }

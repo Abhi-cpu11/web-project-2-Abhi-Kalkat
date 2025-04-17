@@ -9,10 +9,8 @@ body {
   /* Set background color to tan */
   background-color: #e9dfc3;
   /* Use a fantasy font family */
-  font-family: fantasy;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.6rem;
-  /* Set text color to dark grey */
-  color: #333;
   margin: 20px;
   /* Remove default padding */
   padding: 0;
@@ -32,6 +30,7 @@ h1 {
   font-size: 40px;
   /* Center align the text */
   text-align: center;
+  font-family: fantasy;
 }
 
 h2 {
@@ -39,6 +38,7 @@ h2 {
   font-size: 30px;
   /* Align text to the left */
   text-align: left;
+  font-family: fantasy;
 }
 
 div {
@@ -52,7 +52,9 @@ div {
   margin-left: auto;
   /* Center the div horizontally */
   margin-right: auto;
-  background-color: whitesmoke;
+  padding: 5px;
+  margin: 10px;
+  background-color: #1b56fd;
 }
 
 .image-container {
@@ -72,6 +74,7 @@ div {
 
 .trailblazer-nav {
   margin: 0;
+  width: 100%;
 }
 /*Ishaan helped me with my NAV bar*/
 /*"Trailblazer" refers to someone who paves the way for others to follow. They are following my NAV bar*/
@@ -127,12 +130,8 @@ span {
 }
 
 p {
-  /* Set font size to 20px */
-  font-size: 20px;
   /* Align text to the left */
   text-align: left;
-  /* Set a serif font for paragraphs */
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 footer {
@@ -185,13 +184,11 @@ figcaption {
   margin-top: 8px;
   /* Set font size to 14px */
   font-size: 14px;
-  /* Set caption text color to a dark grey */
-  color: #555;
 }
 
 a {
   /* Set link color to blue */
-  color: #0066cc;
+  color: #0099cc;
   /* Remove underline from links */
   text-decoration: none;
 }
@@ -199,4 +196,23 @@ a {
 a:hover {
   /* Underline links when hovered */
   text-decoration: underline;
+}
+
+#epic-header {
+  /* A large font size */
+  font-size: 45px;
+  /* Center the text */
+  text-align: center;
+  /* A royal purple color */
+  color: white;
+  /* A serif font */
+  font-family: fantasy;
+  /* Subtle shadow effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  line-height: 140%;
+  letter-spacing: 0.5px;
+  word-spacing: 0px;
 }

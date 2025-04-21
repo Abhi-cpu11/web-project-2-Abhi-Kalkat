@@ -1,14 +1,4 @@
-<!--Name: Abhi Kalkat 
-
-Course: Webdev 10s 
-
-Teacher: Ms. Hoitink 
-
-School: Pembina Trails Collegiate 
-
-Date Last Modified: March. 19. 2025 
--->
-<!--cHANGE THE NAME OF THIS WHEN NEAR DONE-->
+<!--Second Webpage Abhi Kalkat-->
 <!DOCTYPE html>
 <!--Selcting a Coding Language -->
 <html lang="en">
@@ -19,7 +9,22 @@ Date Last Modified: March. 19. 2025
     <!--Connecting the styles.css with the index.html-->
     <link rel="stylesheet" href="styles.css" />
     <!--Put in style for internal css -->
-    <style></style>
+    <style>
+      /* Apply the hover effect to the element with the id 'vividimage-zoom' addtional element not learned in class */
+      #vividimage-zoom:hover {
+        /* Scale the image to 1.05 times its original size when hovered */
+        transform: scale(1.05);
+        /* Change the cursor to indicate thats its more zoomed in */
+        cursor: zoom-in;
+      }
+      /* ID selector for the element with the custom cursor, made this because the link was very intresting and different from the others*/
+      #cool-cursor-link {
+        /* When you hover over this element, the cursor will change to 'grab' (looks like you're holding something like a link) */
+        cursor: grab;
+        /* A dashed border to make the element visually stand out */
+        border: 2px dashed black;
+      }
+    </style>
   </head>
   <!--Body of the page-->
   <body>
@@ -29,9 +34,9 @@ Date Last Modified: March. 19. 2025
         <ul>
           <!--Put in the nav bar-->
           <!--Put in the tabindex for the accessiblity-->
-          <li><a href="index.html" tabindex="0">Home</a></li>
+          <li><a href="index.html" tabindex="1">Home</a></li>
           <!-- fIND A NAME BESIDES SECOND PAGE-->
-          <li><a href="index-treaty-one.html" tabindex="1">Second Page</a></li>
+          <li><a href="explore-treaty1.html" tabindex="1">Explore More</a></li>
         </ul>
       </nav>
     </header>
@@ -44,24 +49,33 @@ Date Last Modified: March. 19. 2025
         <div>
           <!-- Navigation link to the home page with tabindex for accessibility -->
           <!--Find a name that suits this page-->
-          <h1 id="epic-header" tabindex="2">SUM else</h1>
+          <h1 id="epic-header" tabindex="2">
+            Exploring The Legacy Of Treaty 1 Further
+          </h1>
         </div>
       </section>
 
       <!-- Section for Colored Treaties and It displaying Treaty One in violet-blue -->
-      <section tabindex="19">
+      <!-- Start of a section element that can be navigated to with keyboard (tabindex can be filled if needed) -->
+      <section tabindex="3">
+        <!-- Grouping image and its caption together in a figure element -->
         <figure>
+          <!-- Image of the Treaty map with alt text describing the visual content, and tabindex to make it focusable -->
           <img
+            id="vividimage-zoom"
             src="Treaty Map Colored.png"
             alt="A map showing the boundaries of Treaty 1-11. They do this by using Canada and all the 11 treaties to create a colored coordinated map. Showing Treaty numbers as in 1-11 and their years they began."
-            tabindex="20" />
-          <figcaption tabindex="21">
+            tabindex="4" />
+          <!-- Caption for the image that is also focusable via keyboard -->
+          <figcaption tabindex="5">
+            <!-- Text description explaining the content of the map and that Treaty 1 is highlighted -->
             A color-coded map showing the locations and boundaries of Treaties 1
             to 11 across Canada. Treaty One is highlighted in violet-purple to
             distinguish it from the others. Source:
+            <!-- Hyperlink to a Wikipedia page for more info, also keyboard-navigable with tabindex -->
             <a
               href="https://en.wikipedia.org/wiki/Numbered_Treaties"
-              tabindex="22">
+              tabindex="5">
               View the full map and learn more about the Numbered Treaties on
               Wikipedia by clicking on this text
             </a>
@@ -70,12 +84,12 @@ Date Last Modified: March. 19. 2025
       </section>
 
       <!--Section for the text and information about Treaty One and its historic term-->
-      <section tabindex="">
+      <section tabindex="6">
         <!-- Div Groups the title and paragraph -->
         <div>
           <!--h2 for my "title" of what I'm going to be yip yapping about-->
-          <h2 tabindex="">What are the historic terms of the Treaty 1?</h2>
-          <p tabindex="">
+          <h2 tabindex="7">What are the historic terms of Treaty One?</h2>
+          <p tabindex="8">
             Treaty 1 was signed in 1871 between the Canadian government and
             seven First Nations groups. Some of the key terms in the Treaty
             included land, money, and other promises. Each Indigenous family of
@@ -91,7 +105,7 @@ Date Last Modified: March. 19. 2025
           <!--Link to the information/source-->
           <a
             href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028660/1564413031536"
-            tabindex="6">
+            tabindex="9">
             Learn more about the land allocations, farming, and goverment
             promises outlined in Treaty 1 (1871) from the Government of Canada's
             official report, by clicking on this text</a
@@ -100,13 +114,13 @@ Date Last Modified: March. 19. 2025
       </section>
 
       <!--Section for the text and information about Treaty One -->
-      <section tabindex="3">
+      <section tabindex="10">
         <div>
-          <h2 tabindex="4">
-            What makes Treaty 1 different from other Treaties in Canada?
+          <h2 tabindex="11">
+            What makes Treaty One different from other Treaties in Canada?
           </h2>
           <!--Paragraph explaining what makes it different from other treaties-->
-          <p tabindex="5">
+          <p tabindex="12">
             Treaty 1 is different from some other treaties because it was the
             first numbered treaty signed after Manitoba joined Canada. It also
             set the tone for <span> future treaties</span>. But many people from
@@ -120,7 +134,7 @@ Date Last Modified: March. 19. 2025
           <!--Link to addtional information on Treaty 1 -->
           <a
             href="https://www.canadashistory.ca/explore/politics-law/interpreting-the-treaties"
-            tabindex="6">
+            tabindex="13">
             Learn more about how Treaty 1 was interpreted differently compared
             to other treaties, by clicking on this text.</a
           >
@@ -128,13 +142,13 @@ Date Last Modified: March. 19. 2025
       </section>
 
       <!--Section for the text and information about Treaty One and how its implemented today-->
-      <section tabindex="3">
+      <section tabindex="14">
         <!-- Div Groups the title and paragraph -->
         <div>
           <!--h2 for my "title" of what I'm going to be Yapping about-->
-          <h2 tabindex="4">How is Treaty 1 implemented today?</h2>
-          <!--Paragraph explaining what treaty one is-->
-          <p tabindex="5">
+          <h2 tabindex="15">How is Treaty One implemented today?</h2>
+          <!--Paragraph explaining treaty one and how its implemented today-->
+          <p tabindex="16">
             Treaty 1 is still important today and is recognized by Canadian law
             under the Constitution Act, 1982. This means the government still
             has a legal duty to respect the promises made in the Treaty. One way
@@ -150,8 +164,11 @@ Date Last Modified: March. 19. 2025
             are also using treaty rights to take part in decisions about land
             and resources.
           </p>
-          <!--For more information on Treaty 1 -->
-          <a href="https://treaty1.ca/naawi-oodena/" tabindex=""
+          <!--For more information on Treaty 1, cool-cursor is here and is cool, link still works but takes a second, i dashed and made a cursor here because I felt this link was very intresting and different.-->
+          <a
+            id="cool-cursor-link"
+            href="https://treaty1.ca/naawi-oodena/"
+            tabindex="17"
             >Click here on this text to learn more about the Kapyong Barracks
             and how Treaty One is being implemented today on the official Treaty
             One website.
@@ -160,10 +177,10 @@ Date Last Modified: March. 19. 2025
       </section>
     </main>
 
-    <!--For the bottom of my page and will become more advanced in next webpage-->
-    <footer tabindex="28">
+    <!--For the bottom of my page-->
+    <footer tabindex="18">
       <!--Copywrited Just incase Charran wanted to copy-->
-      <p tabindex="29">
+      <p tabindex="19">
         &copy; 2025 Treaty One Project - Designed by Abhi Kalkat
       </p>
     </footer>

@@ -6,22 +6,28 @@ It reminds me of old paper, like treaty documents or maps. That gives it a histo
 https://picsart.com/blog/tan-color/#:~:text=Tan%20symbolizes%20stability%2C%20growth%2C%20fertility,peace%2C%20relaxation%2C%20and%20warmth.
 */
 body {
-  /* Set background color to tan */
+  /* Set background color to  */
   background-color: #e9dfc3;
-  /* Use a fantasy font family */
+  /* Using a serif font to give professional look */
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.6rem;
+  /* Set the margin to 20*/
   margin: 20px;
   /* Remove default padding */
   padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
+  /* Set vertical spacing between lines to make paragraphs easier to read */
+  line-height: 140%;
+  /* Add subtle space between letters for better readability */
+  letter-spacing: 1px;
+  /* Add a bit of space between words to make text feel more open */
+  word-spacing: 0.9px;
+  /* Increase the base font size to make text easier to read */
+  font-size: 1.2rem;
+  /* Set the text color to a dark shade for better contrast against the background */
+  color: #2e3b1f;
 }
 
 main {
+  /* Ms. H said to make a cleaner "border-looking thing" to separate my colors */
   padding: 15px;
 }
 
@@ -30,7 +36,9 @@ h1 {
   font-size: 40px;
   /* Center align the text */
   text-align: center;
-  font-family: fantasy;
+  /* Gives the header boldness */
+  font-weight: bold;
+  color: #355e3b;
 }
 
 h2 {
@@ -38,7 +46,10 @@ h2 {
   font-size: 30px;
   /* Align text to the left */
   text-align: left;
-  font-family: fantasy;
+  /* Gives the header boldness */
+  font-weight: bold;
+  /* Set color to a */
+  color: #355e3b;
 }
 
 div {
@@ -52,30 +63,36 @@ div {
   margin-left: auto;
   /* Center the div horizontally */
   margin-right: auto;
+  /*Adds 5 pixels of space inside the element between its content and its border.*/
   padding: 5px;
+  /* Adds 10 pixels of space outside the element between its border and surrounding elements.*/
   margin: 10px;
-  background-color: #1b56fd;
+  /* Set color to */
+  background-color: white;
 }
 
 .image-container {
   /* Set display to inline-block so the div only takes up the necessary width */
   display: inline-block;
-  /* Optionally set a maximum width to prevent the div from expanding too much */
+  /* set a maximum width to prevent the div from expanding too much */
   max-width: 100%;
-  /* Optional: Center the div if you'd like */
+  /* Center the div if you'd like */
   text-align: center;
-  /* Optional: Add some padding around the div */
+  /* Add some padding around the div */
   padding: 10px;
-  /* Optional: Add a border to visually separate the container */
+  /* Add a border to visually separate the container */
   border: 1px solid lightgray;
-  /* Optional: Ensure it doesn't affect the image layout */
+  /* Ensure it doesn't affect the image layout */
   box-sizing: border-box;
 }
 
 .trailblazer-nav {
+  /* Remove all default margins around the element */
   margin: 0;
+  /* Make the element span the full width of its container */
   width: 100%;
 }
+
 /*Ishaan helped me with my NAV bar*/
 /*"Trailblazer" refers to someone who paves the way for others to follow. They are following my NAV bar*/
 .trailblazer-nav a {
@@ -89,13 +106,13 @@ div {
   display: block;
   /* Center align the text inside the link */
   text-align: center;
-  /*Setting the background to brown?*/
-  background-color: #0118d8;
+  /*Setting the background to */
+  background-color: orangered;
 }
 
 .trailblazer-nav a:hover {
   /* Set background color to lavender when hovered */
-  background-color: lavender;
+  background-color: white;
   /* Round the corners of the link on hover */
   border-radius: 5px;
 }
@@ -108,8 +125,6 @@ div {
 .trailblazer-nav ul {
   /* Remove bullet points from the list */
   list-style-type: none;
-  /* Set background color of the navbar to black */
-  background-color: #0118d8;
   /* Remove default margin */
   margin: 0px;
   /* Clear floats (for use with flexbox) */
@@ -120,23 +135,13 @@ div {
   justify-content: center;
   /* Remove padding */
   padding: 0px;
-}
-
-span {
-  /* Set text color to navy */
-  color: navy;
-  /* Set text style to italic */
-  font-style: italic;
-}
-
-p {
-  /* Align text to the left */
-  text-align: left;
+  /* Set background color of the navbar to  */
+  background-color: #355e3b;
 }
 
 footer {
-  /* Set footer background color to black */
-  background-color: #0118d8;
+  /* Set footer background color to  */
+  background-color: #355e3b;
   /* Set footer text color to white */
   color: rgb(255, 255, 255);
   /* Add padding inside the footer */
@@ -145,6 +150,33 @@ footer {
   width: 100%;
   /* Stick footer to the bottom of the page */
   bottom: 0;
+  /*Full width - stretch across the screen */
+  width: 100%;
+}
+
+#epic-header {
+  /* A large font size */
+  font-size: 45px;
+  /* Center the text */
+  text-align: center;
+  /* A color */
+  color: #355e3b;
+  /* A san-serif font to give a more sleek look and also Ms.H said you can have both and they powerpoint said*/
+  font-family: fantasy;
+  /* Subtle shadow effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+span {
+  /* Set text color to make it coolio */
+  color: navy;
+  /* Set text style to italic */
+  font-style: italic;
+}
+
+p {
+  /* Align text to the left */
+  text-align: left;
 }
 
 img {
@@ -176,43 +208,25 @@ figure {
 }
 
 figcaption {
-  /* Set the font style to italic */
-  font-style: italic;
   /* Center-align the text in the caption */
   text-align: center;
   /* Add space above the caption */
   margin-top: 8px;
-  /* Set font size to 14px */
+  /* Set font size to 14px for hierachy */
   font-size: 14px;
 }
 
 a {
-  /* Set link color to blue */
+  /* Set link color to */
   color: #0099cc;
   /* Remove underline from links */
   text-decoration: none;
+  /* Add glowing effect, text-shadow: horizontal-offset vertical-offset blur-radius color, addtional feature wasn't learned in class*/
+  text-shadow: 0 0 10px #0099cc, 0 0 20px #0099cc, 0 0 30px #0099cc;
+  font-style: italic;
 }
 
 a:hover {
-  /* Underline links when hovered */
+  /* Underline links when hovered and is my addtional feature */
   text-decoration: underline;
-}
-
-#epic-header {
-  /* A large font size */
-  font-size: 45px;
-  /* Center the text */
-  text-align: center;
-  /* A royal purple color */
-  color: white;
-  /* A serif font */
-  font-family: fantasy;
-  /* Subtle shadow effect */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-* {
-  line-height: 140%;
-  letter-spacing: 0.5px;
-  word-spacing: 0px;
 }

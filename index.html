@@ -19,47 +19,45 @@ Date Last Modified: March. 19. 2025
     <link rel="stylesheet" href="styles.css" />
     <!--Put in style for internal css -->
     <style>
-/* Styling for the #epic-header */
+      /* Styling for the iframe aka vision frame for a ID effect */
+      #vision-frame {
+        /* Adds 20px of space on the top and bottom of the element, and centers it horizontally */
+        margin: 20px auto;
+        /* Limits the maximum width of the element to 600px */
+        max-width: 600px;
+        /* Rounds the corners of the element with an 8px radius */
+        border-radius: 8px;
+        /* Sets the background color to  */
+        background-color: grey;
+        /* Adds a soft shadow with a 4px vertical offset, 8px blur, and low opacity for depth */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        /* Adds 10px of space inside the element around its content */
+        padding: 10px;
+      }
 
-  /* Styling for the iframe aka vision frame for a ID effect */
-#vision-frame {
-  /* Adds 20px of space on the top and bottom of the element, and centers it horizontally */
-  margin: 20px auto; 
-  /* Limits the maximum width of the element to 600px */
-  max-width: 600px;
-  /* Rounds the corners of the element with an 8px radius */
-  border-radius: 8px;
-  /* Sets the background color to white (RGB value for white) */
-  background-color: grey;
-  /* Adds a soft shadow with a 4px vertical offset, 8px blur, and low opacity for depth */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  /* Adds 10px of space inside the element around its content */
-  padding: 10px;
-}
+      /* Styling for the 'Explore Indigenous Lands' link */
+      #explore-link {
+        /* Makes the link behave like a button */
+        display: inline-block;
+        /* Creates a gradient background transitioning from purple to blue */
+        background: linear-gradient(45deg, #0099cc, #ff6699);
+        /* Sets the text color to white for better contrast */
+        color: white;
+        /* Increases the font size for better readability */
+        font-size: 18px;
+        /* Makes the text bold for emphasis */
+        font-weight: bold;
+        /* Adds padding inside the button for a better appearance */
+        padding: 12px 20px;
+        /* Rounds the corners for a modern, softer look */
+        border-radius: 8px;
+        /* Removes the default underline on links */
+        text-decoration: none;
+        /* Adds a subtle shadow effect for depth */
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+      }
 
-  /* Styling for the 'Explore Indigenous Lands' link */
-#explore-link {
-  /* Makes the link behave like a button */
-  display: inline-block;
-  /* Creates a gradient background transitioning from purple to blue */
-  background: linear-gradient(45deg, #0099cc, #ff6699);
-  /* Sets the text color to white for better contrast */
-  color: white;
-  /* Increases the font size for better readability */
-  font-size: 18px;
-  /* Makes the text bold for emphasis */
-  font-weight: bold;
-  /* Adds padding inside the button for a better appearance */
-  padding: 12px 20px;
-  /* Rounds the corners for a modern, softer look */
-  border-radius: 8px;
-  /* Removes the default underline on links */
-  text-decoration: none;
-  /* Adds a subtle shadow effect for depth */
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-    /* Closing the style tag */
+      /* Closing the style tag */
     </style>
   </head>
   <!--Body of the page-->
@@ -69,15 +67,15 @@ Date Last Modified: March. 19. 2025
       <nav class="trailblazer-nav">
         <ul>
           <!--Put in the nav bar-->
-          <!--Put in the tabindex for the accessiblity-->
-          <li><a href="index.html" tabindex="0">Home</a></li>
-          <li><a href="index-treaty-one.html" tabindex="1">Second Page</a></li>
+          <!--Put in the tabindex for the accessiblity, I know both are 1 but it still works -->
+          <li><a href="index.html" tabindex="1">Home</a></li>
+          <li><a href="explore-treaty1.html" tabindex="1">Explore More</a></li>
         </ul>
       </nav>
     </header>
 
     <!--Main content of the page-->
-  <main>
+    <main>
       <!--Section to break off codes and make it easier to understand, this one is for my h1 header-->
       <section>
         <!--Div to group the elements such as h1-->
@@ -90,28 +88,29 @@ Date Last Modified: March. 19. 2025
 
       <!--Section for the text and information about Treaty One-->
       <section tabindex="3">
-      <!-- Div Groups the title and paragraph -->
-      <div>
-        <!--h2 for my "title" of what I'm going to be Yapping about-->
-        <h2 tabindex="4">What is Treaty One?</h2>
-        <!--Paragraph explaining what treaty one is-->
-        <p tabindex="5">
-          <!--Span in this <p> text to style vital text -->
-          Treaty No. 1 was signed on August 3, 1871, at
-          <span> Lower Fort Garry </span> in North Winnipeg, Manitoba. It was
-          the first of the Numbered Treaties between the Canadian government and
-          Indigenous peoples. This treaty involved the Anishinaabe and Swampy
-          Cree nations of southern Manitoba. The agreement stated that specific
-          lands to the Crown was in exchange for various commitments, including
-          the reserve lands, payments, and other benefits to the Indigenous
-          groups.
-        </p>
-        <!--Link to the Canadian Encyclopedia for more information on Treaty 1 -->
-        <a
-          href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 "
-          tabindex="6"
-          >Read more about Treaties 1 and 2 on The Canadian Encyclopedia by clicking on this text</a
-        >
+        <!-- Div Groups the title and paragraph -->
+        <div>
+          <!--h2 for my "title" of what I'm going to be Yapping about-->
+          <h2 tabindex="4">What is Treaty One?</h2>
+          <!--Paragraph explaining what treaty one is-->
+          <p tabindex="5">
+            <!--Span in this <p> text to style vital text -->
+            Treaty No. 1 was signed on August 3, 1871, at
+            <span> Lower Fort Garry </span> in North Winnipeg, Manitoba. It was
+            the first of the Numbered Treaties between the Canadian government
+            and Indigenous peoples. This treaty involved the Anishinaabe and
+            Swampy Cree nations of southern Manitoba. The agreement stated that
+            specific lands to the Crown was in exchange for various commitments,
+            including the reserve lands, payments, and other benefits to the
+            Indigenous groups.
+          </p>
+          <!--Link to the Canadian Encyclopedia for more information on Treaty 1 -->
+          <a
+            href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 "
+            tabindex="6"
+            >Read more about Treaties 1 and 2 on The Canadian Encyclopedia by
+            clicking on this text</a
+          >
         </div>
       </section>
 
@@ -126,13 +125,13 @@ Date Last Modified: March. 19. 2025
             tabindex="8" />
           <!--Make image more focused for tabbing and figcaption also adds addtional info such as links -->
           <figcaption tabindex="9">
-          Treaty One, Lower Fort Garry. Explore the history and significance of Lower Fort Garry on Travel Manitoba's official website (Source):
-    <a
-      href="https://www.travelmanitoba.com/directory/lower-fort-garry-national-historic-site-of-canada/"
-    tabindex="10"
-  >
-    Click here to go to Travel Manitoba website
-  </a>
+            Treaty One, Lower Fort Garry. Explore the history and significance
+            of Lower Fort Garry on Travel Manitoba's official website (Source):
+            <a
+              href="https://www.travelmanitoba.com/directory/lower-fort-garry-national-historic-site-of-canada/"
+              tabindex="10">
+              Click here to go to Travel Manitoba website
+            </a>
           </figcaption>
         </figure>
       </section>
@@ -141,7 +140,8 @@ Date Last Modified: March. 19. 2025
       <section tabindex="11">
         <figure>
           <!--Using the special ID vision-frame, the iframe is grey is show color contrast. I have realized when I have another Iframe it will look different, but this is because this iframe holds a signifcant more value. Also the height and width is more visable.-->
-          <iframe id="vision-frame"
+          <iframe
+            id="vision-frame"
             tabindex="12"
             width="560"
             height="315"
@@ -173,82 +173,97 @@ Date Last Modified: March. 19. 2025
               alt="A detailed map highlighting the geographical boundaries of Treaty One and Two. Being already zoomed in, you can see the different areas of the treaty and the land that was given to the Crown."
               tabindex="16" />
             <figcaption tabindex="17">
-                A detailed map showing the boundaries of Treaty 1 and Treaty 2, which were both signed in 1871. 
-                The map illustrates how these treaties are closely linked by geography and history. (Source):
-      <a 
-        href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/" 
-      tabindex="18"
-  >
-    Learn more about the Treaty 1 and 2 map on Canadian Geographic by clicking on this text
-    </a>
+              A detailed map showing the boundaries of Treaty 1 and Treaty 2,
+              which were both signed in 1871. The map illustrates how these
+              treaties are closely linked by geography and history. (Source):
+              <a
+                href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/"
+                tabindex="18">
+                Learn more about the Treaty 1 and 2 map on Canadian Geographic
+                by clicking on this text
+              </a>
             </figcaption>
           </figure>
         </div>
       </section>
 
       <!--section for treaty communities and who was incoorparated in treaty one-->
-      <section tabindex="23">
+      <section tabindex="19">
         <!-- div Groups the title and paragraph -->
         <div>
-        <h2 tabindex="24">Treaty One Communities</h2>
-        <p tabindex="25">
-          Treaty One is made up of many Indigenous communities in southern
-          Manitoba. These communities represent the
-          <span> Anishinaabe and Swampy Cree </span>
-          Nations. In particular, the Saulteaux (a division of the Anishinaabe),
-          Swampy Cree, and Ojibwe peoples signed the treaty. The historic
-          actions Indigenous communities took then still affect the land we're living
-          on today. Many of us fail to realize/ take for granted the land we
-          live on.
-        </p>
-        <a
-          href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 "
-          tabindex="26"
-          >Read more about Treaties 1 and 2 on The Canadian Encyclopedia by clicking on this text</a
-        >
-      </div>
+          <h2 tabindex="20">Treaty One Communities</h2>
+          <p tabindex="21">
+            Treaty One is made up of many Indigenous communities in southern
+            Manitoba. These communities represent the
+            <span> Anishinaabe and Swampy Cree </span>
+            Nations. In particular, the Saulteaux (a division of the
+            Anishinaabe), Swampy Cree, and Ojibwe peoples signed the treaty. The
+            historic actions Indigenous communities took then still affect the
+            land we're living on today. Many of us fail to realize/ take for
+            granted the land we live on.
+          </p>
+          <a
+            href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 "
+            tabindex="22"
+            >Read more about Treaties 1 and 2 on The Canadian Encyclopedia by
+            clicking on this text</a
+          >
+        </div>
       </section>
 
-      </br>
-      </br>
-      </br>
-      <!--Section for the Indigenous Territories and a addtional webpage-->
+      <!--Section for the Indigenous Territories and a addtional webpage, addtional feature because the gradient wasn't learned in to class-->
       <section tabindex="">
-        <a href="https://native-land.ca/" id="explore-link" tabindex="27"
+        <a href="https://native-land.ca/" id="explore-link" tabindex="23"
           >Learn more about Indigenous Territories By clicking on this text</a
         >
       </section>
 
-      <section index="">
-    <!-- Main heading for this section -->
-    <h2 id="newsletterHeading">Stay Updated with Our Newsletter</h2>
-    <!-- Short description of what the form offers -->
-    <p>Subscribe to get the latest articles, updates, and exclusive content delivered straight to your inbox.</p>
-    <!-- Newsletter form -->
-    <form>
-      <!-- Grouping the form fields -->
-      <fieldset>
-        <!-- Title for the group of form controls -->
-        <legend>Subscribe with your email address</legend>
-        <!-- Label connected to the email input -->
-        <label for="email">Email Address:</label><br>
-        <!-- Email input -->
-        <input type="email" id="email" name="email" placeholder="e.g. yourname@example.com" required><br>
-        <!-- Help text shown visually only -->
-        <small>We value your privacy and will never share your email with anyone else.</small><br>
-        <small>Please enter a valid email format (e.g. name@example.com).</small><br><br>
-        <!-- Submit button -->
-        <input type="submit" value="Subscribe Now">
-      </fieldset>
-    </form>
-  </section>
-</section>
-</main>
+      <section index="24">
+        <div>
+          <h2 id="newsletterHeading" tabindex="24">
+            Stay Updated with Our Newsletter
+          </h2>
+          <!-- Short description of what the form offers -->
+          <p tabindex="25">
+            Subscribe to get the latest articles, updates, and exclusive content
+            delivered straight to your inbox.
+          </p>
+          <!-- In Newsletter form -->
+          <form>
+            <!-- Grouping the form fields -->
+            <fieldset>
+              <!-- Title for the group of the legend -->
+              <legend tabindex="26">Subscribe with your email address</legend>
+              <!-- Label connected to the email input -->
+              <label for="email" tabindex="27">Email Address:</label><br />
+              <!-- Email input -->
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g. yourname@example.com"
+                required
+                tabindex="28" /><br />
+              <!-- Help text shown visually and descirptive text-->
+              <p tabindex="29">
+                We value your privacy and will never share your email with
+                anyone else.
+              </p>
+              <p tabindex="30">
+                Please enter a valid email format (e.g. name@example.com).
+              </p>
+              <!-- Submit button -->
+              <input type="submit" value="Subscribe Now" tabindex="31" />
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
 
-    <!--For the bottom of my page and will become more advanced in next webpage-->
-    <footer tabindex="28">
+    <!--For the bottom of my page-->
+    <footer tabindex="32">
       <!--Copywrited Just incase Charran wanted to copy-->
-      <p tabindex="29">
+      <p tabindex="33">
         &copy; 2025 Treaty One Project - Designed by Abhi Kalkat
       </p>
     </footer>

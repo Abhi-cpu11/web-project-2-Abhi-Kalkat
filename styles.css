@@ -23,12 +23,15 @@ body {
   /* Increase the base font size to make text easier to read */
   font-size: 1.2rem;
   /* Set the text color to a dark shade for better contrast against the background */
-  color: #2e3b1f;
+  color: #1f4529;
 }
 
 main {
   /* Ms. H said to make a cleaner "border-looking thing" to separate my colors */
   padding: 15px;
+  /* Set the background color to a light shade of green and creates a layering effect */
+  background-color: #a6b174; /*
+  background-color: #e8ecd7; */
 }
 
 h1 {
@@ -38,7 +41,8 @@ h1 {
   text-align: center;
   /* Gives the header boldness */
   font-weight: bold;
-  color: #355e3b;
+  /* Set color to a */
+  color: #1f4529;
 }
 
 h2 {
@@ -49,7 +53,7 @@ h2 {
   /* Gives the header boldness */
   font-weight: bold;
   /* Set color to a */
-  color: #355e3b;
+  color: #1f4529;
 }
 
 div {
@@ -91,6 +95,7 @@ div {
   margin: 0;
   /* Make the element span the full width of its container */
   width: 100%;
+  color: #e8ecd7;
 }
 
 /*Ishaan helped me with my NAV bar*/
@@ -106,12 +111,10 @@ div {
   display: block;
   /* Center align the text inside the link */
   text-align: center;
-  /*Setting the background to */
-  background-color: orangered;
 }
 
 .trailblazer-nav a:hover {
-  /* Set background color to lavender when hovered */
+  /* Set background color to white when hovered */
   background-color: white;
   /* Round the corners of the link on hover */
   border-radius: 5px;
@@ -136,12 +139,12 @@ div {
   /* Remove padding */
   padding: 0px;
   /* Set background color of the navbar to  */
-  background-color: #355e3b;
+  background-color: #47663b;
 }
 
 footer {
   /* Set footer background color to  */
-  background-color: #355e3b;
+  background-color: #47663b;
   /* Set footer text color to white */
   color: rgb(255, 255, 255);
   /* Add padding inside the footer */
@@ -150,8 +153,6 @@ footer {
   width: 100%;
   /* Stick footer to the bottom of the page */
   bottom: 0;
-  /*Full width - stretch across the screen */
-  width: 100%;
 }
 
 #epic-header {
@@ -169,7 +170,7 @@ footer {
 
 span {
   /* Set text color to make it coolio */
-  color: navy;
+  color: #355e3b;
   /* Set text style to italic */
   font-style: italic;
 }
@@ -218,11 +219,11 @@ figcaption {
 
 a {
   /* Set link color to */
-  color: #0099cc;
+  color: #355e3b;
   /* Remove underline from links */
   text-decoration: none;
   /* Add glowing effect, text-shadow: horizontal-offset vertical-offset blur-radius color, addtional feature wasn't learned in class*/
-  text-shadow: 0 0 10px #0099cc, 0 0 20px #0099cc, 0 0 30px #0099cc;
+  text-shadow: 0 0 5px #355e3b, 0 0 10px #355e3b, 0 0 20px #355e3b;
   font-style: italic;
 }
 

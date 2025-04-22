@@ -1,4 +1,4 @@
-/* 
+/*
 I chose tan because it fits the meaning behind Treaty One and the purpose of the website. 
 Tan is an earth tone, and it connects to the land which is a big part of treaty history. 
 It stands for stability, growth, and honesty. Tan also feels natural and calm, which also gives the site a peaceful and professional vibe. 
@@ -6,7 +6,7 @@ It reminds me of old paper, like treaty documents or maps. That gives it a histo
 https://picsart.com/blog/tan-color/#:~:text=Tan%20symbolizes%20stability%2C%20growth%2C%20fertility,peace%2C%20relaxation%2C%20and%20warmth.
 */
 body {
-  /* Set background color to  */
+  /* Set background color to tan/light yellow */
   background-color: #e9dfc3;
   /* Using a serif font to give professional look */
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -22,16 +22,15 @@ body {
   word-spacing: 0.9px;
   /* Increase the base font size to make text easier to read */
   font-size: 1.2rem;
-  /* Set the text color to a dark shade for better contrast against the background */
+  /* Set the text color to a dark shade for better contrast against the background and also to replace black, its coolio*/
   color: #1f4529;
 }
 
 main {
-  /* Ms. H said to make a cleaner "border-looking thing" to separate my colors */
+  /* Ms. H helped this part, said to make a cleaner "border-looking thing" to separate my colors and make it look nice. */
   padding: 15px;
   /* Set the background color to a light shade of green and creates a layering effect */
-  background-color: #a6b174; /*
-  background-color: #e8ecd7; */
+  background-color: #a6b174;
 }
 
 h1 {
@@ -41,8 +40,8 @@ h1 {
   text-align: center;
   /* Gives the header boldness */
   font-weight: bold;
-  /* Set color to a */
-  color: #1f4529;
+  /* Set the color to a mid shade of green, accent */
+  color: #385534;
 }
 
 h2 {
@@ -52,8 +51,8 @@ h2 {
   text-align: left;
   /* Gives the header boldness */
   font-weight: bold;
-  /* Set color to a */
-  color: #1f4529;
+  /* Set the color to a mid shade of green, accent */
+  color: #385534;
 }
 
 div {
@@ -71,7 +70,7 @@ div {
   padding: 5px;
   /* Adds 10 pixels of space outside the element between its border and surrounding elements.*/
   margin: 10px;
-  /* Set color to */
+  /* Set color to white */
   background-color: white;
 }
 
@@ -84,8 +83,8 @@ div {
   text-align: center;
   /* Add some padding around the div */
   padding: 10px;
-  /* Add a border to visually separate the container */
-  border: 1px solid lightgray;
+  /* Adding a 3px a border of my Mid green to visually separate the container */
+  border: 8px solid #385534;
   /* Ensure it doesn't affect the image layout */
   box-sizing: border-box;
 }
@@ -95,7 +94,6 @@ div {
   margin: 0;
   /* Make the element span the full width of its container */
   width: 100%;
-  color: #e8ecd7;
 }
 
 /*Ishaan helped me with my NAV bar*/
@@ -114,7 +112,7 @@ div {
 }
 
 .trailblazer-nav a:hover {
-  /* Set background color to white when hovered */
+  /* Set background color to white when hovered which an additonal feature */
   background-color: white;
   /* Round the corners of the link on hover */
   border-radius: 5px;
@@ -138,21 +136,29 @@ div {
   justify-content: center;
   /* Remove padding */
   padding: 0px;
-  /* Set background color of the navbar to  */
-  background-color: #47663b;
+  /* Set background color of the navbar to dark green */
+  background-color: #1f4529;
 }
 
 footer {
-  /* Set footer background color to  */
-  background-color: #47663b;
-  /* Set footer text color to white */
+  /* Set footer background color to match navbar, before it looked different so I had to adjust to match nav bar*/
+  background-color: #1f4529;
+  /* Set text color to white */
   color: rgb(255, 255, 255);
   /* Add padding inside the footer */
   padding: 10px;
-  /* Set width to 100% of the screen */
+  /* Make footer span full width of the screen */
   width: 100%;
-  /* Stick footer to the bottom of the page */
-  bottom: 0;
+  /* Use flexbox layout to center content */
+  display: flex;
+  /* Horizontally center-align footer content */
+  justify-content: center;
+  /* Vertically center-align footer content */
+  align-items: center;
+  /* Remove default margin */
+  margin: 0;
+  /* Include padding in the element's total width */
+  box-sizing: border-box;
 }
 
 #epic-header {
@@ -160,8 +166,8 @@ footer {
   font-size: 45px;
   /* Center the text */
   text-align: center;
-  /* A color */
-  color: #355e3b;
+  /* A dark green color because the "title" is important */
+  color: #1f4529;
   /* A san-serif font to give a more sleek look and also Ms.H said you can have both and they powerpoint said*/
   font-family: fantasy;
   /* Subtle shadow effect */
@@ -169,10 +175,10 @@ footer {
 }
 
 span {
-  /* Set text color to make it coolio */
-  color: #355e3b;
   /* Set text style to italic */
   font-style: italic;
+  /* Set font weight to bold for emphasis on the span*/
+  font-weight: bold;
 }
 
 p {
@@ -202,7 +208,7 @@ figure {
   border-radius: 8px;
   /* Set background color to white */
   background-color: rgb(255, 255, 255);
-  /* Add a soft shadow around the figure */
+  /* Add a soft shadow around the figure to add depth */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   /* Add padding inside the figure */
   padding: 10px;
@@ -218,16 +224,17 @@ figcaption {
 }
 
 a {
-  /* Set link color to */
-  color: #355e3b;
+  /* Set link color to a mid shade of green because it create more constrast and users know this mid green is different for a reason and not think its regular text. */
+  color: #385534;
   /* Remove underline from links */
   text-decoration: none;
-  /* Add glowing effect, text-shadow: horizontal-offset vertical-offset blur-radius color, addtional feature wasn't learned in class*/
-  text-shadow: 0 0 5px #355e3b, 0 0 10px #355e3b, 0 0 20px #355e3b;
+  /* Add a slight glowing effect to look cool but not crazy, also my h1&2 is the same color so it shows the differnce between the 2 links and h1&2, text-shadow: horizontal-offset vertical-offset blur-radius color, additonal feature wasn't learned in class*/
+  text-shadow: 0 0 2px #385534, 0 0 2px #385534, 0 0 4px #385534;
+  /* Add a subtle italic to show visually it's different */
   font-style: italic;
 }
 
 a:hover {
-  /* Underline links when hovered and is my addtional feature */
+  /* Underline links when hovered and is my additonal feature */
   text-decoration: underline;
 }

@@ -238,3 +238,12 @@ a:hover {
   /* Underline links when hovered and is my additonal feature */
   text-decoration: underline;
 }
+
+.always-subscribe-and-input-coolio {
+  /* Green text */
+  color: #1f4529;
+  /* White background */
+  background-color: #ffffff;
+  /* Add the light green */
+  border: #a6b174 solid 2px;
+}
